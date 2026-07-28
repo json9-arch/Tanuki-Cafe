@@ -1,0 +1,114 @@
+h1 {
+    word-spacing: 12px;
+    text-align:center;
+    font-family: 'Monoton', cursive;
+    font-size: 6rem;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    font-weight: 400;
+    
+    color:#ffffff;
+
+
+    text-shadow: 
+        0 0 10px #ff0000,
+        0 0 30px #ff0000,
+        0 0 60px #ff0000,
+        2px 2px 0px #000,
+        4px 4px 0px #000,
+        6px 6px 0px #000,
+        8px 8px 10px #000;
+}
+
+h2 {
+    word-spacing: 6px;
+    text-align:center;
+    font-family: 'Arbutus', cursive;
+    font-size: 24px;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    font-weight: 400;
+    
+    color:#ffffff;
+}
+
+p {
+    word-spacing: 6px;
+    text-align:center;
+    font-family: 'Limelight', sans-serif;
+    font-size: 24px;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    font-weight: 400;
+    
+    color:#ffffff;
+    line-height: 1.8;
+    word-spacing: 2px;
+    
+    max-width: 800px;
+    margin: 20px auto;
+    
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    
+    background-image: url('C:\\Users\\Delar\\OneDrive\\Desktop\\Tanuki Cafe\\Imagenes\\Fondo-banbu.png'); 
+    
+    background-size: cover;      
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+.contenedor-principal {
+    display: flex;
+    align-items: center;      
+    justify-content: center;  
+    gap: 30px;               
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tarjeta-info {
+    flex: 1;                  
+    background: rgba(10, 10, 15, 0.75); 
+    border: 2px solid #ac0404; 
+    border-radius: 15px;     
+    padding: 25px;            
+}
+
+.mascota-img {
+    width: 450px;             
+    height: auto;
+    object-fit: contain;
+}
+
+.parpadeo-1 {
+    animation: fallo-tubo 2s infinite;
+}
+
+.parpadeo-2 {
+    animation: fallo-tubo 3.5s infinite 1.2s; 
+}
+
+@keyframes fallo-tubo {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        color: #ffffff;
+        text-shadow: 0 0 5px #ff0033, 0 0 15px #ff0033, 0 0 30px #ff0033;
+        opacity: 1;
+    }
+    20%, 24%, 55% {
+        color: #333333;
+        text-shadow: none;
+        opacity: 0.3;
+    }
+}
