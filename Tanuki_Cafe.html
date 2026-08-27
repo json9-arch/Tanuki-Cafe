@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <title>Tanuki Cafe</title>
 
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
@@ -22,19 +21,33 @@
 
 </head>
 
-<body>
+<body class="fondo-inicio">
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="barra-navegacion">
+        <div class="logo-nav">
+            <img src="Imagenes/LOGO.png" alt="Logo Tanuki Café" class="icono-logo">
+            <span>TANUKI CAFÉ</span>
+        </div>
+        <ul class="enlaces-nav">
+            <li><a href="#menu">Informacion</a></li>
+            <li><a href="#menu-coffees">Cafés</a></li>
+            <li><a href="#fauna-completa">Fauna</a></li>
+            <li><a href="#lago-tanuki">Lago</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
 
 
-    <h1>
+    <h1 id="menu" class="tanuki">
         T<span class="parpadeo-1">A</span>N<span class="parpadeo-2">U</span>K<span class="parpadeo-1">I</span> C<span
             class="parpadeo-2">A</span>F<span class="parpadeo-1">E</span>
     </h1>
 
     <h2 class="subtitulo">Un sabor de otros tiempos en un lugar tranquilo</h2>
     <hr>
-    </div>
 
-    <div class="contenedor-principal">
+    <div class="contenedor-principal" data-fondo="fondo-inicio">
 
         <div class="tarjeta-info">
             <p>Bienvenido a Tanuki Café, una experiencia única en el corazón de la naturaleza
@@ -42,313 +55,547 @@
                 de bambú, un hermoso lago y una gran variedad de fauna.</p>
         </div>
 
-        <img src="C:\Users\Delar\OneDrive\Desktop\Tanuki Cafe\Imagenes\Tanuki-Boss.png" alt="Mascota Tanuki"
-            class="mascota-img">
-    </div>
-
+        <img src="Imagenes/Tanuki-Boss.png" alt="Mascota Tanuki" class="mascota-img">
     </div>
 
     <!-- Sección de menú de cafés -->
-    <section class="seccion-carrusel">
-    <h2 class="titulo-menu">NUESTROS COFFE</h2>
+    <section id="menu-coffees" class="seccion-carrusel" data-fondo="fondo-cafe">
+        <h2 class="titulo-menu">NUESTROS CAFÉS</h2>
 
-    <div class="carrusel-track">
+        <div class="carrusel-track">
 
-        <div class="tarjeta-cafe">
-            <div class="insignia">$2.50</div>
-            <h3>Café Tanuki</h3>
-            <p>Café de la casa, intenso y aromático.</p>
-            <span class="etiqueta">Especialidad</span>
-        </div>
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$2.00</div>
-            <h3>Espresso 90's</h3>
-            <p>Espresso clásico y concentrado.</p>
-        </div>
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$2.50</div>
-            <h3>Americano Retro</h3>
-            <p>Espresso diluido en agua caliente.</p>
-        </div>
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$3.50</div>
-            <h3>Cappuccino Tanuki</h3>
-            <p>Espresso con leche vaporizada y abundante espuma.</p>
-        </div>
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$3.50</div>
-            <h3>Latte del Bosque</h3>
-            <p>Café suave con leche súper cremosa.</p>
-        </div>
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$4.00</div>
-            <h3>Mocha 1995</h3>
-            <p>Mezcla perfecta de café, chocolate y leche.</p>
-            <span class="etiqueta">Favorito</span>
-        </div>
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$3.00</div>
-            <h3>Macchiato Elegante</h3>
-            <p>Espresso intenso con solo un toque de leche.</p>
-        </div>
-
-    </div>
-    
-    <p class="pista-scroll"> Desliza para explorar </p>
-</section>
-
-<!-- Sección de menú de bebidas frías -->
-<section class="seccion-carrusel">
-    <h2 class="titulo-menu">BEBIDAS FRÍAS</h2>
-
-    <div class="carrusel-track">
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$4.50</div>
-            <h3>Tanuki Frappe</h3>
-            <p>Frappé de café con crema.</p>
-            <span class="etiqueta">Favorito</span>
-        </div>
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$4.00</div>
-            <h3>Neon Coffee</h3>
-            <p>Café frío con un estilo colorido y retro.</p>
-            <span class="etiqueta">Especial</span>
-        </div>
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$4.50</div>
-            <h3>Retro Shake</h3>
-            <p>Batido de vainilla, chocolate o fresa.</p>
-        </div>
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$4.00</div>
-            <h3>Bamboo Matcha</h3>
-            <p>Bebida fría de matcha.</p>
-        </div>
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$3.50</div>
-            <h3>Pink 90's</h3>
-            <p>Bebida fría de frutos rojos.</p>
-        </div>
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$3.50</div>
-            <h3>Blue Lagoon</h3>
-            <p>Bebida refrescante azul sin alcohol.</p>
-        </div>
-
-    </div>
-    
-    <p class="pista-scroll"> Desliza para explorar</p>
-</section>
-
-<!-- Sección de menú de postres -->
-<section class="seccion-carrusel">
-    <h2 class="titulo-menu">POSTRES</h2>
-
-    <div class="carrusel-track">
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$3.00</div>
-            <h3>Tanuki Brownie</h3>
-            <p>Delicioso brownie de chocolate especialidad de la casa.</p>
-            <span class="etiqueta">Popular</span>
-        </div>
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$4.00</div>
-            <h3>Cheesecake Retro</h3>
-            <p>Clásico cheesecake artesanal con toque vintage.</p>
-        </div>
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$4.00</div>
-            <h3>Pastel de Chocolate 90's</h3>
-            <p>Pastel esponjoso de chocolate al estilo noventero.</p>
-        </div>
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$2.50</div>
-            <h3>Donas Neón</h3>
-            <p>Donas glaseadas con colores vibrantes.</p>
-        </div>
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$2.00</div>
-            <h3>Galletas Tanuki</h3>
-            <p>Crujientes galletas artesanales con figura de la casa.</p>
-        </div>
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$4.50</div>
-            <h3>Waffle del Bosque</h3>
-            <p>Waffle crujiente servido con toppings de la casa.</p>
-            <span class="etiqueta">Especial</span>
-        </div>
-
-    </div>
-    
-    <p class="pista-scroll"> Desliza para explorar </p>
-</section>
-
-<!-- Sección de menú de comidas -->
-<section class="seccion-carrusel">
-    <h2 class="titulo-menu">COMIDAS</h2>
-
-    <div class="carrusel-track">
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$6.50</div>
-            <h3>Tanuki Club Sandwich</h3>
-            <p>Sándwich clásico de tres capas servido con ingredientes frescos.</p>
-        </div>
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$7.00</div>
-            <h3>Retro Burger</h3>
-            <p>Hamburguesa artesanal al estilo clásico de los 90.</p>
-            <span class="etiqueta">Favorito</span>
-        </div>
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$6.50</div>
-            <h3>Bamboo Chicken Sandwich</h3>
-            <p>Sándwich de pechuga de pollo marinada y empanizada.</p>
-        </div>
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$3.50</div>
-            <h3>Papas 90's</h3>
-            <p>Papas fritas sazonadas y crujientes con aderezo especial.</p>
-        </div>
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$3.50</div>
-            <h3>Croissant del Tanuki</h3>
-            <p>Croissant horneado relleno de jamón y queso derretido.</p>
-        </div>
-
-        <div class="tarjeta-cafe">
-            <div class="insignia">$9.00</div>
-            <h3>Combo Tanuki</h3>
-            <p>Incluye hamburguesa o sándwich, papas y bebida a elección.</p>
-            <span class="etiqueta">Especial</span>
-        </div>
-
-    </div>
-    
-    <p class="pista-scroll"> Desliza para explorar </p>
-</section>
-
-<!-- Sección de especialidades y combos -->
-<section class="seccion-carrusel">
-    <h2 class="titulo-menu">ESPECIALIDADES</h2>
-
-    <div class="carrusel-track">
-
-        <div class="tarjeta-especialidad">
-            <div class="insignia_1">$5.00</div>
-            <h3>The Gentleman</h3>
-            <p>El café insignia de Tanuki Café. Un cappuccino especial servido con una presentación elegante inspirada en el tanuki de esmoquin.</p>
-            <span class="etiqueta   ">Insignia</span>
-        </div>
-
-        <div class="tarjeta-especialidad">
-            <div class="insignia_1">$4.50</div>
-            <h3>Bamboo Latte</h3>
-            <p>Un latte especial de la casa inspirado en el bosque de bambú.</p>
-        </div>
-
-        <div class="tarjeta-especialidad">
-            <div class="insignia_1">$5.00</div>
-            <h3>Tanuki Neon Shake</h3>
-            <p>Un batido colorido inspirado en la estética de los años 90 y servido con una presentación llamativa.</p>
-            <span class="etiqueta">Top 90's</span>
-        </div>
-
-        <div class="tarjeta-especialidad">
-            <div class="insignia_1">$4.50</div>
-            <h3>Lago Retro</h3>
-            <p>Una bebida fría azul inspirada en el lago del parque, con una presentación refrescante y tropical.</p>
-        </div>
-
-    </div>
-    
-    <p class="pista-scroll">Desliza para explorar</p>
-</section>
-
-<!-- Sección completa envuelta en un cuadro grande -->
-<section id="fauna-completa" class="seccion-fauna-contenedor">
-    
-    <div class="cuadro-fauna-principal">
-        
-        <h2 class="titulo-fauna">FAUNA Y NATURALEZA</h2>
-
-        <div class="texto-introduccion">
-            <p>En <strong>Tanuki Café</strong>, la naturaleza es parte de la experiencia. A lo largo del bosque, el lago y sus senderos podrás encontrar diferentes especies, cada una en un entorno pensado para su bienestar.</p>
-            <p>Desde los protagonistas, los <em>tanukis</em>, hasta los pavos reales, aves y animales del lago, cada encuentro hace que el recorrido sea diferente.</p>
-        </div>
-
-        <h3 class="subtitulo-fauna">NUESTROS HABITANTES</h3>
-
-        <div class="contenedor-fauna">
-
-            <div class="tarjeta-animal">
-                <h3>Tanukis</h3>
-                <p>Los habitantes del bosque de bambú.</p>
+            <div class="tarjeta-cafe">
+                <div class="insignia">$2.50</div>
+                <h3>Café Tanuki</h3>
+                <p>Café de la casa, intenso y aromático.</p>
+                <span class="etiqueta">Especialidad</span>
+                <img src="Imagenes/Café-Tanuki.png" alt="Café Tanuki" class="popover-img">
             </div>
 
-            <div class="tarjeta-animal">
-                <h3>Pavos reales</h3>
-                <p>Caminan libremente alrededor del lago.</p>
+            <div class="tarjeta-cafe">
+                <div class="insignia">$2.00</div>
+                <h3>Espresso 90's</h3>
+                <p>Espresso clásico y concentrado.</p>
+                <img src="Imagenes/Espresso-90's.png" alt="Café Tanuki" class="popover-img">
+
             </div>
 
-            <div class="tarjeta-animal">
-                <h3>Patos</h3>
-                <p>Habitan las tranquilas aguas del lago.</p>
+            <div class="tarjeta-cafe">
+                <div class="insignia">$2.50</div>
+                <h3>Americano Retro</h3>
+                <p>Espresso diluido en agua caliente.</p>
+                <img src="Imagenes/Americano-Retro.png" alt="Café Tanuki" class="popover-img">
             </div>
 
-            <div class="tarjeta-animal">
-                <h3>Tortugas</h3>
-                <p>Recorren las orillas y zonas poco profundas.</p>
+            <div class="tarjeta-cafe">
+                <div class="insignia">$3.50</div>
+                <h3>Cappuccino Tanuki</h3>
+                <p>Espresso con leche vaporizada y abundante espuma.</p>
+                <img src="Imagenes/Cappuccino-Tanuki.png" alt="Café Tanuki" class="popover-img">
             </div>
 
-            <div class="tarjeta-animal">
-                <h3>Conejos</h3>
-                <p>Habitan las pequeñas praderas del bosque.</p>
+            <div class="tarjeta-cafe">
+                <div class="insignia">$3.50</div>
+                <h3>Latte del Bosque</h3>
+                <p>Café suave con leche súper cremosa.</p>
+                <img src="Imagenes/Latte-del-Bosque.png" alt="Café Tanuki" class="popover-img">
             </div>
 
-            <div class="tarjeta-animal">
-                <h3>Ardillas</h3>
-                <p>Saltan entre los árboles y la vegetación.</p>
+            <div class="tarjeta-cafe">
+                <div class="insignia">$4.00</div>
+                <h3>Mocha 1995</h3>
+                <p>Mezcla perfecta de café, chocolate y leche.</p>
+                <span class="etiqueta">Favorito</span>
+                <img src="Imagenes/Mocha-1995.png" alt="Café Tanuki" class="popover-img">
             </div>
 
-            <div class="tarjeta-animal">
-                <h3>Aves</h3>
-                <p>Llenan el bosque con sus cantos.</p>
-            </div>
-
-            <div class="tarjeta-animal">
-                <h3>Peces</h3>
-                <p>Habitan el lago y pueden ser alimentados con comida autorizada.</p>
+            <div class="tarjeta-cafe">
+                <div class="insignia">$3.00</div>
+                <h3>Macchiato Elegante</h3>
+                <p>Espresso intenso con solo un toque de leche.</p>
+                <img src="Imagenes/Macchiato-Elegante.png" alt="Café Tanuki" class="popover-img">
             </div>
 
         </div>
 
-    </div>
+        <p class="pista-scroll"> Desliza para explorar </p>
+    </section>
 
-</section>
+    <!-- Sección de menú de bebidas frías -->
+    <section class="seccion-carrusel" data-fondo="fondo-cafe">
+        <h2 class="titulo-menu">BEBIDAS FRÍAS</h2>
 
+        <div class="carrusel-track">
+
+            <div class="tarjeta-cafe">
+                <div class="insignia">$4.50</div>
+                <h3>Tanuki Frappe</h3>
+                <p>Frappé de café con crema.</p>
+                <span class="etiqueta">Favorito</span>
+                <img src="Imagenes/Tanuki-Frappe.png" alt="Café Tanuki" class="popover-img">
+            </div>
+
+            <div class="tarjeta-cafe">
+                <div class="insignia">$4.00</div>
+                <h3>Neon Coffee</h3>
+                <p>Café frío con un estilo colorido y retro.</p>
+                <span class="etiqueta">Especial</span>
+                <img src="Imagenes/Neon-Coffee.png" alt="Café Tanuki" class="popover-img">
+            </div>
+
+            <div class="tarjeta-cafe">
+                <div class="insignia">$4.50</div>
+                <h3>Retro Shake</h3>
+                <p>Batido de vainilla, chocolate o fresa.</p>
+                <img src="Imagenes/Retro-Shake.png" alt="Café Tanuki" class="popover-img">
+            </div>
+
+            <div class="tarjeta-cafe">
+                <div class="insignia">$4.00</div>
+                <h3>Bamboo Matcha</h3>
+                <p>Bebida fría de matcha.</p>
+                <img src="Imagenes/Bamboo-Matcha.png" alt="Café Tanuki" class="popover-img">
+            </div>
+
+            <div class="tarjeta-cafe">
+                <div class="insignia">$3.50</div>
+                <h3>Pink 90's</h3>
+                <p>Bebida fría de frutos rojos.</p>
+                <img src="Imagenes/Pink-90's.png" alt="Café Tanuki" class="popover-img">
+            </div>
+
+            <div class="tarjeta-cafe">
+                <div class="insignia">$3.50</div>
+                <h3>Blue Lagoon</h3>
+                <p>Bebida refrescante azul sin alcohol.</p>
+                <img src="Imagenes/Blue-Lagoon.png" alt="Café Tanuki" class="popover-img">
+            </div>
+
+        </div>
+
+        <p class="pista-scroll"> Desliza para explorar</p>
+    </section>
+
+    <!-- Sección de menú de postres -->
+    <section class="seccion-carrusel" data-fondo="fondo-cafe">
+        <h2 class="titulo-menu">POSTRES</h2>
+
+        <div class="carrusel-track">
+
+            <div class="tarjeta-cafe">
+                <div class="insignia">$3.00</div>
+                <h3>Tanuki Brownie</h3>
+                <p>Delicioso brownie de chocolate especialidad de la casa.</p>
+                <span class="etiqueta">Popular</span>
+                <img src="Imagenes/Tanuki-Brownie.png" alt="Café Tanuki" class="popover-img">
+            </div>
+
+            <div class="tarjeta-cafe">
+                <div class="insignia">$4.00</div>
+                <h3>Cheesecake Retro</h3>
+                <p>Clásico cheesecake artesanal con toque vintage.</p>
+                <img src="Imagenes/Cheesecake-Retro.png" alt="Café Tanuki" class="popover-img">
+            </div>
+
+            <div class="tarjeta-cafe">
+                <div class="insignia">$4.00</div>
+                <h3>Pastel de Chocolate 90's</h3>
+                <p>Pastel esponjoso de chocolate al estilo noventero.</p>
+                <img src="Imagenes/Pastel-de-Chocolate-90's.png" alt="Café Tanuki" class="popover-img">
+            </div>
+
+            <div class="tarjeta-cafe">
+                <div class="insignia">$2.50</div>
+                <h3>Donas Neón</h3>
+                <p>Donas glaseadas con colores vibrantes.</p>
+                <img src="Imagenes/Donas-Neón.png" alt="Café Tanuki" class="popover-img">
+            </div>
+
+            <div class="tarjeta-cafe">
+                <div class="insignia">$2.00</div>
+                <h3>Galletas Tanuki</h3>
+                <p>Crujientes galletas artesanales con figura de la casa.</p>
+                <img src="Imagenes/Galletas-Tanuki.png" alt="Café Tanuki" class="popover-img">
+            </div>
+
+            <div class="tarjeta-cafe">
+                <div class="insignia">$4.50</div>
+                <h3>Waffle del Bosque</h3>
+                <p>Waffle crujiente servido con toppings de la casa.</p>
+                <span class="etiqueta">Especial</span>
+                <img src="Imagenes/Waffle-del-Bosque.png" alt="Café Tanuki" class="popover-img">
+            </div>
+
+        </div>
+
+        <p class="pista-scroll"> Desliza para explorar </p>
+    </section>
+
+    <!-- Sección de menú de comidas -->
+    <section class="seccion-carrusel" data-fondo="fondo-cafe">
+        <h2 class="titulo-menu">COMIDAS</h2>
+
+        <div class="carrusel-track">
+
+            <div class="tarjeta-cafe">
+                <div class="insignia">$6.50</div>
+                <h3>Tanuki Club Sandwich</h3>
+                <p>Sándwich clásico de tres capas servido con ingredientes frescos.</p>
+                <img src="Imagenes/Tanuki-Club-Sandwich.png" alt="Café Tanuki" class="popover-img">
+            </div>
+
+            <div class="tarjeta-cafe">
+                <div class="insignia">$7.00</div>
+                <h3>Retro Burger</h3>
+                <p>Hamburguesa artesanal al estilo clásico de los 90.</p>
+                <span class="etiqueta">Favorito</span>
+                <img src="Imagenes/Retro-Burger.png" alt="Café Tanuki" class="popover-img">
+            </div>
+
+            <div class="tarjeta-cafe">
+                <div class="insignia">$6.50</div>
+                <h3>Bamboo Chicken Sandwich</h3>
+                <p>Sándwich de pechuga de pollo marinada y empanizada.</p>
+                <img src="Imagenes/Bamboo-Chicken-Sandwich.png" alt="Café Tanuki" class="popover-img">
+            </div>
+
+            <div class="tarjeta-cafe">
+                <div class="insignia">$3.50</div>
+                <h3>Papas 90's</h3>
+                <p>Papas fritas sazonadas y crujientes con aderezo especial.</p>
+                <img src="Imagenes/Papas-90's.png" alt="Café Tanuki" class="popover-img">
+            </div>
+
+            <div class="tarjeta-cafe">
+                <div class="insignia">$3.50</div>
+                <h3>Croissant del Tanuki</h3>
+                <p>Croissant horneado relleno de jamón y queso derretido.</p>
+                <img src="Imagenes/Croissant-del-Tanuki.png" alt="Café Tanuki" class="popover-img">
+
+            </div>
+
+        </div>
+
+        <p class="pista-scroll"> Desliza para explorar </p>
+    </section>
+
+    <!-- Sección de especialidades y combos -->
+    <section class="seccion-carrusel" data-fondo="fondo-cafe">
+        <h2 class="titulo-menu">ESPECIALIDADES</h2>
+
+        <div class="carrusel-track">
+
+            <div class="tarjeta-especialidad">
+                <div class="insignia_1">$5.00</div>
+                <h3>The Gentleman</h3>
+                <p>El café insignia de Tanuki Café. Un cappuccino especial servido con una presentación elegante
+                    inspirada en el tanuki de esmoquin.</p>
+                <span class="etiqueta">Insignia</span>
+                <img src="Imagenes/The-Gentleman.png" alt="Café Tanuki" class="popover-img">
+
+            </div>
+
+            <div class="tarjeta-especialidad">
+                <div class="insignia_1">$4.50</div>
+                <h3>Bamboo Latte</h3>
+                <p>Un latte especial de la casa inspirado en el bosque de bambú.</p>
+                <img src="Imagenes/Bamboo-Latte.png" alt="Café Tanuki" class="popover-img">
+
+            </div>
+
+            <div class="tarjeta-especialidad">
+                <div class="insignia_1">$5.00</div>
+                <h3>Tanuki Neon Shake</h3>
+                <p>Un batido colorido inspirado en la estética de los años 90 y servido con una presentación llamativa.
+                </p>
+                <span class="etiqueta">Top 90's</span>
+                <img src="Imagenes/Tanuki-Neon-Shake.png" alt="Café Tanuki" class="popover-img">
+
+            </div>
+
+            <div class="tarjeta-especialidad">
+                <div class="insignia_1">$4.50</div>
+                <h3>Lago Retro</h3>
+                <p>Una bebida fría azul inspirada en el lago del parque, con una presentación refrescante y tropical.
+                </p>
+                <img src="Imagenes/Lago-Retro.png" alt="Café Tanuki" class="popover-img">
+
+            </div>
+
+        </div>
+
+        <p class="pista-scroll">Desliza para explorar</p>
+    </section>
+
+    <!-- SECCIÓN COMBOS ESPECIALES -->
+    <section class="seccion-carrusel" data-fondo="fondo-cafe">
+        <h2 class="titulo-menu">COMBOS ESPECIALES</h2>
+        <div class="carrusel-track">
+
+            <!-- Combo El Caballero -->
+            <div class="tarjeta-combo">
+                <div class="insignia_3">$5.00</div>
+                <h3>Combo El Caballero</h3>
+                <p>Café Tanuki + Brownie de chocolate.</p>
+                <span class="etiqueta">Popular</span>
+                <img src="Imagenes/Combo-Caballero.png" alt="Combo El Caballero" class="popover-img">
+            </div>
+
+            <!-- Combo 90's -->
+            <div class="tarjeta-combo">
+                <div class="insignia_3">$6.00</div>
+                <h3>Combo 90's</h3>
+                <p>Retro Shake + Donas Neón.</p>
+                <span class="etiqueta">Retro</span>
+                <img src="Imagenes/Combo-90's.png" alt="Combo 90s" class="popover-img">
+            </div>
+
+            <!-- Combo Bosque -->
+            <div class="tarjeta-combo">
+                <div class="insignia_3">$8.00</div>
+                <h3>Combo Bosque</h3>
+                <p>Bamboo Latte + Waffle del Bosque.</p>
+                <span class="etiqueta">Especial</span>
+                <img src="Imagenes/Combo-Bosque.png" alt="Combo Bosque" class="popover-img">
+            </div>
+
+            <!-- Combo Tanuki -->
+            <div class="tarjeta-combo">
+                <div class="insignia_3">$10.00</div>
+                <h3>Combo Tanuki</h3>
+                <p>Hamburguesa + Papas + Bebida.</p>
+                <span class="etiqueta">Pro</span>
+                <img src="Imagenes/Combo-Tanuki.png" alt="Combo Tanuki" class="popover-img">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Sección completa envuelta en un cuadro grande -->
+    <section id="fauna-completa" class="seccion-fauna-contenedor" data-fondo="fondo-fauna">
+
+        <div class="cuadro-fauna-principal">
+
+            <h2 class="titulo-fauna">FAUNA Y NATURALEZA</h2>
+
+            <div class="texto-introduccion">
+                <p>En <strong>Tanuki Café</strong>, la naturaleza es parte de la experiencia. A lo largo del bosque, el
+                    lago y sus senderos podrás encontrar diferentes especies, cada una en un entorno pensado para su
+                    bienestar.</p>
+                <p>Desde los protagonistas, los <em>tanukis</em>, hasta los pavos reales, aves y animales del lago, cada
+                    encuentro hace que el recorrido sea diferente.</p>
+            </div>
+
+            <h3 class="subtitulo-fauna">NUESTROS HABITANTES</h3>
+
+            <div class="contenedor-fauna">
+
+                <div class="tarjeta-animal">
+                    <h3>Tanukis</h3>
+                    <p>Los habitantes del bosque de bambú.</p>
+                    <img src="Imagenes/Tanukifoto.jpeg" alt="Café Tanuki" class="popover-img">
+                </div>
+
+                <div class="tarjeta-animal">
+                    <h3>Pavos reales</h3>
+                    <p>Caminan libremente alrededor del lago.</p>
+                    <img src="Imagenes/Pavoreal.jpg" alt="Café Tanuki" class="popover-img">
+                </div>
+
+                <div class="tarjeta-animal">
+                    <h3>Patos</h3>
+                    <p>Habitan las tranquilas aguas del lago.</p>
+                    <img src="Imagenes/Patos.jpg" alt="Café Tanuki" class="popover-img">
+                </div>
+
+                <div class="tarjeta-animal">
+                    <h3>Tortugas</h3>
+                    <p>Recorren las orillas y zonas poco profundas.</p>
+                    <img src="Imagenes/Tortugas.webp" alt="Café Tanuki" class="popover-img">
+                </div>
+
+                <div class="tarjeta-animal">
+                    <h3>Conejos</h3>
+                    <p>Habitan las pequeñas praderas del bosque.</p>
+                    <img src="Imagenes/Conejos.webp" alt="Café Tanuki" class="popover-img">
+                </div>
+
+                <div class="tarjeta-animal">
+                    <h3>Ardillas</h3>
+                    <p>Saltan entre los árboles y la vegetación.</p>
+                    <img src="Imagenes/Ardillas.jpg" alt="Café Tanuki" class="popover-img">
+                </div>
+
+                <div class="tarjeta-animal">
+                    <h3>Aves</h3>
+                    <p>Llenan el bosque con sus cantos.</p>
+                    <img src="Imagenes/Aves.jpg" alt="Café Tanuki" class="popover-img">
+                </div>
+
+                <div class="tarjeta-animal">
+                    <h3>Peces</h3>
+                    <p>Habitan el lago y pueden ser alimentados con comida autorizada.</p>
+                    <img src="Imagenes/Peces.jpeg" alt="Café Tanuki" class="popover-img">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SECCIÓN EL LAGO TANUKI -->
+    <section id="lago-tanuki" class="seccion-lago-contenedor" data-fondo="fondo-lago">
+        <div class="cuadro-lago-principal">
+
+            <h2 class="titulo-lago">EL LAGO TANUKI</h2>
+            <p class="subtitulo-lago">Un rincón para desconectarse</p>
+
+            <hr>
+            <div class="texto-presentacion-lago">
+                <p>Rodeado de bambú y naturaleza, el lago es uno de los lugares más tranquilos de <strong>Tanuki
+                        Café</strong>. Recorre el puente, observa a los animales y encuentra un lugar junto al agua para
+                    disfrutar de tu café mientras escuchas los sonidos del bosque.</p>
+            </div>
+
+            <h3 class="subtitulo-seccion-lago">¿QUÉ ENCONTRARÁS ALREDEDOR?</h3>
+
+            <!-- Contenedor de elementos del lago -->
+            <div class="contenedor-elementos-lago">
+
+                <div class="tarjeta-lago">
+                    <h3>El puente</h3>
+                    <p>Un puente de madera atraviesa el lago y conecta los senderos del bosque.</p>
+                    <img src="Imagenes/puente.png" alt="Café Tanuki" class="popover-img">
+
+                </div>
+
+                <div class="tarjeta-lago">
+                    <h3>Zona de descanso</h3>
+                    <p>Mesas y pequeños espacios para sentarse junto al agua y disfrutar de las bebidas y comidas de
+                        Tanuki Café.</p>
+                    <img src="Imagenes/zonas-descanso.png" alt="Café Tanuki" class="popover-img">
+
+                </div>
+
+                <div class="tarjeta-lago">
+                    <h3>Pavos reales</h3>
+                    <p>Podrás observarlos caminando por las áreas cercanas al lago.</p>
+                    <img src="Imagenes/Pavoreal.jpg" alt="Café Tanuki" class="popover-img">
+
+                </div>
+
+                <div class="tarjeta-lago">
+                    <h3>Patos</h3>
+                    <p>Habitan las zonas acuáticas y pueden verse recorriendo el lago.</p>
+                    <img src="Imagenes/Patos.jpg" alt="Café Tanuki" class="popover-img">
+
+                </div>
+
+                <div class="tarjeta-lago">
+                    <h3>Tortugas</h3>
+                    <p>Se pueden observar descansando en las orillas y zonas especialmente preparadas para ellas.</p>
+                    <img src="Imagenes/Tortugas.webp" alt="Café Tanuki" class="popover-img">
+
+                </div>
+
+                <div class="tarjeta-lago">
+                    <h3>Peces</h3>
+                    <p>El lago alberga diferentes peces. Los visitantes pueden alimentarlos únicamente con el alimento
+                        autorizado por Tanuki Café.</p>
+                    <img src="Imagenes/Peces.jpeg" alt="Café Tanuki" class="popover-img">
+
+                </div>
+
+            </div>
+
+            <!-- Apartado destacado para la estación de alimentación -->
+            <div class="cuadro-alimentacion">
+                <div class="insignia-lago">ESTACIÓN</div>
+                <h3>ALIMENTA A LOS PECES</h3>
+                <p>Adquiere alimento autorizado en nuestra estación y disfruta de una pequeña interacción con la vida
+                    del lago.</p>
+
+                <div class="alerta-lago">
+                    No introduzcas alimentos externos al lago.
+                </div>
+
+                <p class="frase-lago">"Alimenta a los peces, no al lago."</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="contacto" class="seccion-contacto-contenedor" data-fondo="fondo-contacto">
+        <h2 class="titulo-menu">CONTACTOS</h2>
+
+        <div class="cuadro-contacto-grid">
+
+            <div class="columna-info">
+                <h3 class="nombre-cafeteria">Tanuki Café</h3>
+                <p class="slogan-cafeteria">Un sabor de otros tiempos, en un lugar entre el bosque.</p>
+
+                <div class="item-contacto">
+                    <div>
+                        <strong>Ubicación:</strong>
+                        <p>Apaneca, Ruta de las Flores, Ahuachapán, El Salvador.</p>
+                    </div>
+                </div>
+
+                <div class="item-contacto">
+                    <div>
+                        <strong>Teléfono:</strong>
+                        <p>+503 7000-1995</p>
+                    </div>
+                </div>
+
+                <div class="item-contacto">
+                    <div>
+                        <strong>Correo:</strong>
+                        <p>contacto@tanukicafe.com</p>
+                    </div>
+                </div>
+
+                <div class="item-contacto">
+                    <div>
+                        <strong>Redes Sociales:</strong>
+                        <p class="redes-lista">
+                            <span>Instagram: @tanukicafe.sv</span><br>
+                            <span>Facebook: Tanuki Café SV</span><br>
+                            <span>TikTok: @tanukicafe.sv</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item-contacto">
+                    <div>
+                        <strong>Horario:</strong>
+                        <p>Lunes — Domingo<br>8:00 AM — 8:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columna-mapa">
+                <p class="texto-mapa-indicacion">
+                    Nos encontramos en la Ruta de las Flores, cerca de Apaneca, rodeados de bosque y
+                    naturaleza.
+                </p>
+                <div class="contenedor-iframe-mapa">
+                    <!-- Mapa de Google Maps enfocado en Apaneca -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15494.398604724891!2d-89.80936155!3d13.856942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85903b4ebf8d4e9b%3A0xd689e472657e4e08!2sApaneca!5e0!3m2!1ses!2ssv!4v1700000000000!5m2!1ses!2ssv"
+                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+        <script src="fondo.js"></script>
+
+    </section>
 </body>
 
 </html>
